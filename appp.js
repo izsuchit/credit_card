@@ -21,6 +21,7 @@ appp.get("/register", (req, res) => {
 })
 appp.post("/register", async (req, res) => {
     try {
+        const name = req.body.name
         const card = req.body.card
         const month = req.body.month
         const year = req.body.year
